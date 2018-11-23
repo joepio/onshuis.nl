@@ -7,12 +7,27 @@
   </head>
   <body>
     <div class="container">
-        <h1>SeinHuis</h1>
-        <form action="https://formspree.io/info@seinhuis.nu" method="POST">
-          <input type="text" name="name">
+      <h1>SeinHuis</h1>
+      <p>Wilt u op de hoogte blijven van ontwikkelingen? Vul dan dit formulier in.</p>
+      <form action="https://formspree.io/info@seinhuis.nu" method="POST">
+        <label>
+          Voornaam
+          <input type="text" name="voornaam">
+        </label>
+        <label>
+          Achternaam
+          <input type="text" name="achternaam">
+        </label>
+        <label>
+          Woonplaats
+          <input type="text" name="woonplaats">
+        </label>
+        <label>
+          E-mailadres
           <input type="email" name="_replyto">
-          <input type="submit" value="Send">
-        </form>
+        </label>
+        <input type="submit" value="Verzenden">
+      </form>
     </div>
   </body>
 </html>
