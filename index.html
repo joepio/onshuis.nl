@@ -1,33 +1,25 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>SeinHuis</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>SeinHuis</h1>
-      <p>Wilt u op de hoogte blijven van ontwikkelingen? Vul dan dit formulier in.</p>
-      <form action="https://formspree.io/info@seinhuis.nu" method="POST">
-        <label>
-          Voornaam
-          <input type="text" name="voornaam">
-        </label>
-        <label>
-          Achternaam
-          <input type="text" name="achternaam">
-        </label>
-        <label>
-          Woonplaats
-          <input type="text" name="woonplaats">
-        </label>
-        <label>
-          E-mailadres
-          <input type="email" name="_replyto">
-        </label>
-        <input type="submit" value="Verzenden">
-      </form>
-    </div>
-  </body>
-</html>
+---
+layout: default
+title: SeinHuis
+---
+<p>Wilt u op de hoogte blijven van ontwikkelingen? Vul dan dit formulier in.</p>
+<form action="https://formspree.io/info@seinhuis.nu" method="POST">
+  <label>
+    Voornaam
+    <input type="text" name="fname" autocomplete="given-name">
+  </label>
+  <label>
+    Achternaam
+    <input type="text" name="lname" autocomplete="family-name">
+  </label>
+  <label>
+    Woonplaats
+    <input type="text" name="city" autocomplete="city">
+  </label>
+  <label>
+    E-mailadres
+    <input type="email" name="_replyto" autocomplete="email">
+  </label>
+  <input type="hidden" name="_next" value="https://seinhuis.nu/bedankt" />
+  <input type="submit" value="Verzenden">
+</form>
